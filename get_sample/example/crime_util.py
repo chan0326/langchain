@@ -35,7 +35,7 @@ class Reader():
         return json.load(open(f'{file}.json', encoding='utf-8'))
     
     def gmaps(self) -> object:
-        return googlemaps.Client(key = os.environ.get('api_key'))
+        return googlemaps.Client(key = os.environ['api_key'])
 
 
 class Scraper(ScraperBase):
