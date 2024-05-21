@@ -1,5 +1,10 @@
 from abc import *
 
+class EditorBase(metaclass=ABCMeta):
+    @abstractmethod
+    def dropna(self):
+        pass
+
 class printerBase(metaclass=ABCMeta):
     @abstractmethod
     def print(self):
